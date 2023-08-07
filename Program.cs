@@ -23,6 +23,8 @@ namespace LinqPrac32
                           where item % 2 == 0   
                           orderby item
                           select item;
+            output = output2.ToList<int>();
+            int[] output3 = output2.ToArray<int>();
         }
     }
 }
