@@ -18,6 +18,11 @@ namespace LinqPrac32
             {
                 if(item % 2 == 0) output.Add(item);
             }
+
+            var output2 = from item in input
+                          where item % 2 == 0   
+                          orderby item
+                          select item;
         }
     }
 }
